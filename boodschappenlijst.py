@@ -1,17 +1,17 @@
 lijstje = {}
-def boodschappen (x):
+def boodschappen (lijstje):
     welkItem = input ('Wat wil je toevoegen aan je boodschappenlijstje? \n')
     hoeveelItem = int(input ('Hoeveel wil je daarvan? \n'))
     if welkItem in lijstje.keys():
-            x [welkItem] = x [welkItem] + hoeveelItem 
+            lijstje [welkItem] = lijstje [welkItem] + hoeveelItem 
     else:
-        x [welkItem] = hoeveelItem 
-    print (x)
+        lijstje [welkItem] = hoeveelItem 
+    print (lijstje)
     nogmaals = input ('Wil je nog iets toevoegen? \n')
     if nogmaals in ['ja', 'JA', 'Ja', 'j', 'J']:
-        return boodschappen(x)
+        return boodschappen(lijstje)
     elif nogmaals in ['nee' ,'NEE', 'Nee', 'n' ,'N']:
-        print (f'Je boodschappenlijstje is: \n {x}')
+        print (f'Je boodschappenlijstje is: \n {lijstje}')
         exit()
 
 
