@@ -1,4 +1,4 @@
-lijstje = {}
+lijstje = {} #boodschappenlijstje!!
 def boodschappen (lijstje):
     welkItem = input ('Wat wil je toevoegen aan je boodschappenlijstje? \n')
     hoeveelItem = int(input ('Hoeveel wil je daarvan? \n'))
@@ -13,6 +13,4 @@ def boodschappen (lijstje):
     elif nogmaals in ['nee' ,'NEE', 'Nee', 'n' ,'N']:
         print (f'Je boodschappenlijstje is: \n {lijstje}')
         exit()
-
-
 boodschappen(lijstje)
