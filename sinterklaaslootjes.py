@@ -8,18 +8,18 @@ import random
 
 # create allNames list with .split (empty spaces between names = seperate variables) // check if there's more than 2 participants // if there is, add those to the allNames list until at least 3
 allNames = (input ('Welke namen doen allemaal mee? \n').split())
-print (allNames)
-print (len(allNames))                   #test code
+#print (allNames)
+#print (len(allNames))                   #test code
 while len(allNames) <3:
     moreNames = (input ('Ik heb minstens 3 namen nodig, wie zijn de rest van de deelnemers? \n').split())
     allNames += moreNames
     print (len(allNames))               #test code
-print (allNames)
-print (len(allNames))                   #test code
+#print (allNames)
+#print (len(allNames))                   #test code
 
 # remove duplicates from list and make that the new allNames
 allNames = (list(set(allNames)))              
-print (allNames)                        #test code
+#print (allNames)                        #test code
 
 # link two names to each other / no doubles / not your own name
 def drawLootjes(allNames):
